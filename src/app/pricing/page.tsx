@@ -64,9 +64,13 @@ export default function PricingPage() {
   const [waitlistEmail, setWaitlistEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
-  function handleWaitlist(e: React.FormEvent) {
+  async function handleWaitlist(e: React.FormEvent) {
     e.preventDefault();
-    // In a real app, this would save to Supabase
+    await fetch("/api/waitlist", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email: waitlistEmail }),
+    });
     setSubmitted(true);
   }
 
