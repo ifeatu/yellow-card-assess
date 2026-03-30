@@ -12,8 +12,8 @@ export async function POST(req: NextRequest) {
 
   try {
     await resend.emails.send({
-      from: "Yellow Card Assess <contact@yellowcardsecurity.com>",
-      to: ["hello@yellowcardsecurity.com"],
+      from: "Yellow Card Assess <onboarding@resend.dev>",
+      to: ["contact@platinumeagle.io"],
       replyTo: email,
       subject: "New waitlist signup",
       text: `${email} joined the waitlist for paid Yellow Card Assess plans.`,
