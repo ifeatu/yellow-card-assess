@@ -9,11 +9,19 @@
     "lint": "eslint"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@stripe/stripe-js": "^9.1.0",
     "next": "16.2.3",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "stripe": "^22.0.1"
+=======
+    "@supabase/supabase-js": "^2.100.1",
+    "next": "16.2.1",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "resend": "^6.9.4"
+>>>>>>> 8cf6a933d6e534f30b83d9d938b9a3ddff33ca9a
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -21,7 +29,11 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
+<<<<<<< HEAD
     "eslint-config-next": "16.2.3",
+=======
+    "eslint-config-next": "16.2.1",
+>>>>>>> 8cf6a933d6e534f30b83d9d938b9a3ddff33ca9a
     "tailwindcss": "^4",
     "typescript": "^5"
   }
